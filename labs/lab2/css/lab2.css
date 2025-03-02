@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0f7b72;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0f7b72;
+}
+
+/* Header Styling */
+th {
+    background-color: #4caf99;
+    color: white;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #c6f1e8;
+}
+
+/* Links */
+a.student-link {
+    color:  #4caf99;
+    text-decoration: none; /* Remove underline */
+}
+
+a.student-link:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+    padding: 20px 20px;
+    background-color:  #84d4c2;
+    font-size: 18px;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    border-radius: 7px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #42a676;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#listItems">List Inventory</a></li>
+            <li><a href="#addItem">Add Item</a></li>
+            <li><a href="#removeItem">Remove Item</a></li>
+            <li><a href="#getItem">Get Item</a></li>
+            <li><a href="#searchItem">Search Item</a></li>
+            <li><a href="#applyDiscount">Apply Discount</a></li>
+            <li><a href="#calculateTotalValue">Total Value</a></li>
+        </ul>
+    </nav>
+
+    <h1>Music Shop Inventory</h1>
+
+    <!-- Display Inventory Table -->
+    <div id="listItems">        
+        <button onclick="listItems()">List Inventory</button>
+    </div>
+
+    <!-- Add Item Section -->
+    <div class="addItem">
+        <h2>Add New Item</h2>
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="text" id="itemType" placeholder="Item Type">
+        <input type="number" id="itemPrice" placeholder="Item Price">
+        <input type="number" id="itemQuantity" placeholder="Item Quantity">
+        <input type="text" id="itemDescription" placeholder="Item Description">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Remove Item Section -->
+    <div class="removeItem">
+        <h2>Remove Item</h2>
+        <input type="text" id="removeItem" placeholder="Item Name">
+        <button onclick="removeItem()">Remove Item</button>
+    </div>    
+
+    <!-- Get Item Section -->
+    <div class="getItem">
+        <h2>Get Item</h2>
+        <input type="text" id="getItem" placeholder="Item Name">
+        <button onclick="getItem()">Get Item</button>
+        <h4>Get item will be displayed here:</h4>
+        <div id="getItemResult" class="result-container"></div>
+    </div>
+
+    <!-- Search Item Section -->
+    <div class="searchItem">
+        <h2>Search Item</h2>
+        <input type="text" id="searchItem" placeholder="Item Name or Type">
+        <button onclick="searchItem()">Search Item</button>
+        <h4>Search item will be displayed here:</h4>
+        <div id="searchResults" class="result-container"></div>
+    </div>
+
+    <!-- Apply Discount Section -->
+    <div id="applyDiscount">
+        <h2>Apply Discount</h2>
+        <input type="number" id="discount" placeholder="Discount Percentage">
+        <button onclick="applyDiscount()">Apply Discount to All Items</button>
+    </div>
+
+    <!-- Total Value Section -->
+    <div id="calculateTotalValue">
+        <h2 id="totalValue">Total Inventory Value: $</h2>
+        <button onclick="calculateTotalValue()">Calculate Total Value</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Inventory Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

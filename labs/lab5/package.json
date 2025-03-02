@@ -1,0 +1,25 @@
+{
+  "name": "memegenerator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node netlify/functions/api.js"
+  },
+  "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.2",
+    "serverless-http": "^3.2.0",
+    "sharp": "^0.33.5",
+    "unsplash-js": "^7.0.19"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^26.0.0",
+    "supertest": "^7.0.0"
+  }
+}
